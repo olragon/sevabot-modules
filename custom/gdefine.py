@@ -14,14 +14,23 @@ output = ''
 if not meaning:
     sys.exit("Not found! Try another word.")
 if 'primaries' in meaning and meaning['primaries']:
-    output = '---\n'
+    output += '---\n'
+    output += 'Primaries: \n'
+    ident = 0
     for wordType,wordMeans in meaning['primaries'].iteritems():
-        output += wordType + ": "
-        for wordMean in wordMeans[0]:
-          if wordMean is not None:
-            output += wordMean + "\n"
+        ident = 1
+        output += ('%s' % '  ' * ident) + wordType + ": "
+        for wordMean_lv1 in wordMeans:
+            ident = 2
+            if wordMean_lv1[0]:
+                output += '\n' + ('%s' % '  ' * ident) + wordMean_lv1[0]
+            if wordMean_lv1[1]:
+                ident = 3
+                for example in wordMean_lv1[1][0:3]:
+                    output += '\n . ' + ('%s' % '  ' * ident) + example
     output += '---\n'
 if 'webDefinitions' in meaning:
+    output += '\nWeb definitions:'
     for wordMean in meaning['webDefinitions'][0:5]:
         output += '\n  - ' + wordMean
     output += '---\n'
