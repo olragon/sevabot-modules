@@ -5,6 +5,7 @@
 
 Command: `!translate from_to "content"`
 Example: `!translate en_se "Sevabot is a generic purpose hack-it-together Skype bot"`
+
 Result:
 ```Sevabot es un propósito genérico hack-it-junto b Skype```
 
@@ -12,6 +13,7 @@ Result:
 
 Command: `!gdefine word`
 Example: `!gdefine "desktop"`
+
 Result:
 ```---
 Noun: The working surface of a desk
