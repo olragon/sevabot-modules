@@ -4,6 +4,7 @@
 ## Google translate
 
 Command: `!translate from_to "content"`
+
 Example: `!translate en_se "Sevabot is a generic purpose hack-it-together Skype bot"`
 
 Result:
@@ -12,6 +13,7 @@ Result:
 ## Google define
 
 Command: `!gdefine word`
+
 Example: `!gdefine "desktop"`
 
 Result:
