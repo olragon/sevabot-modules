@@ -16,4 +16,3 @@ word = args[2]
 
 result = translate.translate(word, lang_io[0], lang_io[1])
 print(result["trans"].encode('UTF-8'))
-#print(sys.argv[2])
