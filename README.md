@@ -4,16 +4,13 @@
 ## Google translate
 
 Command: `!translate from_to "content"`
-
 Example: `!translate en_se "Sevabot is a generic purpose hack-it-together Skype bot"`
 Result:
-```Sevabot es un propósito genérico hack-it-junto bot Spe
-```
+```Sevabot es un propósito genérico hack-it-junto b Skype```
 
 ## Google define
 
 Command: `!gdefine word`
-
 Example: `!gdefine "desktop"`
 Result:
 ```---
